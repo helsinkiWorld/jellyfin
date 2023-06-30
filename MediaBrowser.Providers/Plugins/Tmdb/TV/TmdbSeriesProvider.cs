@@ -252,8 +252,6 @@ namespace MediaBrowser.Providers.Plugins.Tmdb.TV
 
             series.SetProviderId(MetadataProvider.Tmdb, seriesResult.Id.ToString(CultureInfo.InvariantCulture));
 
-            series.CommunityRating = Convert.ToSingle(seriesResult.VoteAverage);
-
             series.Overview = seriesResult.Overview;
 
             if (seriesResult.Networks is not null)
